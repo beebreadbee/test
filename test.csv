@@ -1,0 +1,2795 @@
+﻿#,Severity,Status,CVE,Finding Name,Risk Categorisation,Finding Discovery Status,Description,Recommendation,Affected Hosts,Affected Ports,Open Date,Remediation Date,Close Date,Plugin Output
+#1,High,Open,CVE-2016-2183,SSL Medium Strength Cipher Suites Supported (SWEET32),SSL Medium Strength Cipher Suites Supported (SWEET32),2023 Nov,"The remote host supports the use of SSL ciphers that offer medium
+strength encryption. Nessus regards medium strength as any encryption
+that uses key lengths at least 64 bits and less than 112 bits, or 
+else that uses the 3DES encryption suite.
+
+Note that it is considerably easier to circumvent medium strength
+encryption if the attacker is on the same physical network.","Reconfigure the affected application if possible to avoid use of
+medium strength ciphers.",1,"tcp/110,tcp/143",1/1/2023,5/1/2023,,
+#2,High,Open,CVE-2023-34048,VMware vCenter Server 6.5 < 6.5U3v / 6.7 < 6.7U3t / 7.0 < 7.0U3o / 8.0 < 8.0U1d Out-of-bounds Write (VMSA-2023-0023),VMware vCenter Server 6.5 < 6.5U3v / 6.7 < 6.7U3t / 7.0 < 7.0U3o / 8.0 < 8.0U1d Out-of-bounds Write (VMSA-2023-0023),2023 Nov,"The version of VMware vCenter Server installed on the remote host is 6.5 prior to 6.5U3v, 6.7 prior to 6.7U3t, 7.0
+prior to 7.0U3o, or 8.0 prior to 8.0U1d. It is, therefore, affected by an out-of-bounds write vulnerability as
+referenced in the VMSA-2023-0023 advisory:
+
+  - vCenter Server contains an out-of-bounds write vulnerability in the implementation of the DCERPC protocol. A
+    malicious actor with network access to vCenter Server may trigger an out-of-bounds write potentially leading to
+    remote code execution. (CVE-2023-34048)
+
+Note that Nessus has not tested for these issues but has instead relied only on the application's self-reported version
+number.","Upgrade to VMware vCenter Server 6.5U3v, 6.7U3t, 7.0U3o, or 8.0U1d or later.",1,tcp/443,1/1/2023,5/1/2023,,
+#3,High,Open,CVE-2023-34048,VMware vCenter Server 6.5 < 6.5U3v / 6.7 < 6.7U3t / 7.0 < 7.0U3o / 8.0 < 8.0U1d Out-of-bounds Write (VMSA-2023-0023),VMware vCenter Server 6.5 < 6.5U3v / 6.7 < 6.7U3t / 7.0 < 7.0U3o / 8.0 < 8.0U1d Out-of-bounds Write (VMSA-2023-0023),2023 Nov,"The version of VMware vCenter Server installed on the remote host is 6.5 prior to 6.5U3v, 6.7 prior to 6.7U3t, 7.0
+prior to 7.0U3o, or 8.0 prior to 8.0U1d. It is, therefore, affected by an out-of-bounds write vulnerability as
+referenced in the VMSA-2023-0023 advisory:
+
+  - vCenter Server contains an out-of-bounds write vulnerability in the implementation of the DCERPC protocol. A
+    malicious actor with network access to vCenter Server may trigger an out-of-bounds write potentially leading to
+    remote code execution. (CVE-2023-34048)
+
+Note that Nessus has not tested for these issues but has instead relied only on the application's self-reported version
+number.","Upgrade to VMware vCenter Server 6.5U3v, 6.7U3t, 7.0U3o, or 8.0U1d or later.",1,tcp/443,1/1/2023,5/1/2023,,
+#4,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,1,udp/53,1/1/2023,,,
+#5,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,1,udp/53,1/1/2023,,,
+#6,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,1,udp/53,1/1/2023,,,
+#7,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,1,udp/53,1/1/2023,,,
+#8,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#9,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#10,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#11,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#12,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#13,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#14,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#15,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#16,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#17,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#18,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#19,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#20,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#21,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#22,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#23,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#24,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#25,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#26,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#27,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#28,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#29,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#30,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,"2023 Nov
+2023 Oct","The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#31,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#32,Medium,Open,,DNS Server Cache Snooping Remote Information Disclosure,DNS Server Cache Snooping Remote Information Disclosure,2023 Nov,"The remote DNS server responds to queries for third-party domains
+that do not have the recursion bit set. 
+
+This may allow a remote attacker to determine which domains have
+recently been resolved via this name server, and therefore which hosts
+have been recently visited. 
+
+For instance, if an attacker was interested in whether your company
+utilizes the online services of a particular financial institution,
+they would be able to use this attack to build a statistical model
+regarding company usage of that financial institution.  Of course, the
+attack can also be used to find B2B partners, web-surfing patterns,
+external mail servers, and more.
+
+Note: If this is an internal DNS server not accessible to outside
+networks, attacks would be limited to the internal network. This
+may include employees, consultants and potentially users on
+a guest network or WiFi connection if supported.",Contact the vendor of the DNS software for a fix.,2,udp/53,1/1/2023,,,
+#33,Medium,Open,,HSTS Missing From HTTPS Server (RFC 6797),HSTS Missing From HTTPS Server (RFC 6797),2023 Nov,"The remote web server is not enforcing HSTS, as defined by RFC 6797. 
+HSTS is an optional response header that can be configured on the server to instruct 
+the browser to only communicate via HTTPS. The lack of HSTS allows downgrade attacks,
+SSL-stripping man-in-the-middle attacks, and weakens cookie-hijacking protections.",Configure the remote web server to use HSTS.,3,tcp/5580,1/1/2023,,,
+#34,Medium,Open,,HSTS Missing From HTTPS Server (RFC 6797),HSTS Missing From HTTPS Server (RFC 6797),"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The remote web server is not enforcing HSTS, as defined by RFC 6797. 
+HSTS is an optional response header that can be configured on the server to instruct 
+the browser to only communicate via HTTPS. The lack of HSTS allows downgrade attacks,
+SSL-stripping man-in-the-middle attacks, and weakens cookie-hijacking protections.",Configure the remote web server to use HSTS.,3,tcp/443,1/1/2023,,,
+#35,Medium,Open,CVE-2003-1567,HTTP TRACE / TRACK Methods Allowed,HTTP TRACE / TRACK Methods Allowed,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The remote web server supports the TRACE and/or TRACK methods. TRACE
+and TRACK are HTTP methods that are used to debug web server
+connections.",Disable these HTTP methods. Refer to the plugin output for more information.,3,"tcp/9084,tcp/9087",1/1/2023,,,
+#36,Medium,Open,CVE-2003-1567,HTTP TRACE / TRACK Methods Allowed,HTTP TRACE / TRACK Methods Allowed,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The remote web server supports the TRACE and/or TRACK methods. TRACE
+and TRACK are HTTP methods that are used to debug web server
+connections.",Disable these HTTP methods. Refer to the plugin output for more information.,3,"tcp/9084,tcp/9087",1/1/2023,,,
+#37,Medium,Open,CVE-1999-0511,IP Forwarding Enabled,IP Forwarding Enabled,"2023 Nov
+2023 Oct","The remote host has IP forwarding enabled. An attacker can exploit
+this to route packets through the host and potentially bypass some
+firewalls / routers / NAC filtering.
+
+Unless the remote host is a router, it is recommended that you disable
+IP forwarding.","On Linux, you can disable IP forwarding by doing :
+
+echo 0 > /proc/sys/net/ipv4/ip_forward
+
+On Windows, set the key 'IPEnableRouter' to 0 under
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters
+
+On Mac OS X, you can disable IP forwarding by executing the command :
+
+sysctl -w net.inet.ip.forwarding=0
+
+For other systems, check with your vendor.",3,tcp/0,1/1/2023,,,
+#38,Medium,Open,CVE-1999-0511,IP Forwarding Enabled,IP Forwarding Enabled,"2023 Nov
+2023 Oct","The remote host has IP forwarding enabled. An attacker can exploit
+this to route packets through the host and potentially bypass some
+firewalls / routers / NAC filtering.
+
+Unless the remote host is a router, it is recommended that you disable
+IP forwarding.","On Linux, you can disable IP forwarding by doing :
+
+echo 0 > /proc/sys/net/ipv4/ip_forward
+
+On Windows, set the key 'IPEnableRouter' to 0 under
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters
+
+On Mac OS X, you can disable IP forwarding by executing the command :
+
+sysctl -w net.inet.ip.forwarding=0
+
+For other systems, check with your vendor.",3,tcp/0,1/1/2023,,,
+#39,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#40,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#41,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#42,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#43,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#44,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#45,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#46,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#47,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#48,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#49,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#50,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#51,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#52,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#53,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#54,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#55,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#56,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/139,1/1/2023,,,
+#57,Medium,Open,,SMB Signing not required,SMB Signing not required,"2023 Nov
+2023 Oct","Signing is not required on the remote SMB server. An unauthenticated,
+remote attacker can exploit this to conduct man-in-the-middle attacks
+against the SMB server.","Enforce message signing in the host's configuration. On Windows, this
+is found in the policy setting 'Microsoft network server: Digitally
+sign communications (always)'. On Samba, the setting is called 'server
+signing'. See the 'see also' links for further details.",3,tcp/445,1/1/2023,,,
+#58,Medium,Open,,TLS Version 1.0 Protocol Detection,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The remote service accepts connections encrypted using TLS 1.0. TLS 1.0 has a
+number of cryptographic design flaws. Modern implementations of TLS 1.0
+mitigate these problems, but newer versions of TLS like 1.2 and 1.3 are
+designed against these flaws and should be used whenever possible.
+
+As of March 31, 2020, Endpoints that aren���t enabled for TLS 1.2
+and higher will no longer function properly with major web browsers and major vendors.
+
+PCI DSS v3.2 requires that TLS 1.0 be disabled entirely by June 30,
+2018, except for POS POI terminals (and the SSL/TLS termination
+points to which they connect) that can be verified as not being
+susceptible to any known exploits.","Enable support for TLS 1.2 and 1.3, and disable support for TLS 1.0.",3,"tcp/636,tcp/3269,tcp/3389",1/1/2023,,,
+#59,Medium,Open,,TLS Version 1.0 Protocol Detection,TLS Version 1.1 Protocol Deprecated,2023 Nov,"The remote service accepts connections encrypted using TLS 1.0. TLS 1.0 has a
+number of cryptographic design flaws. Modern implementations of TLS 1.0
+mitigate these problems, but newer versions of TLS like 1.2 and 1.3 are
+designed against these flaws and should be used whenever possible.
+
+As of March 31, 2020, Endpoints that aren���t enabled for TLS 1.2
+and higher will no longer function properly with major web browsers and major vendors.
+
+PCI DSS v3.2 requires that TLS 1.0 be disabled entirely by June 30,
+2018, except for POS POI terminals (and the SSL/TLS termination
+points to which they connect) that can be verified as not being
+susceptible to any known exploits.","Enable support for TLS 1.2 and 1.3, and disable support for TLS 1.0.",3,"tcp/110,tcp/143",1/1/2023,,,
+#60,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,tcp/443,1/1/2023,,,
+#61,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,"tcp/636,tcp/3269,tcp/3389",1/1/2023,,,
+#62,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,tcp/3389,1/1/2023,,,
+#63,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,"tcp/636,tcp/3269,tcp/3389",1/1/2023,,,
+#64,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,tcp/443,1/1/2023,,,
+#65,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,tcp/443,1/1/2023,,,
+#66,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,tcp/443,1/1/2023,,,
+#67,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,tcp/443,1/1/2023,,,
+#68,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,tcp/443,1/1/2023,,,
+#69,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,tcp/443,1/1/2023,,,
+#70,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,2023 Nov,"The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,"tcp/110,tcp/143",1/1/2023,,,
+#71,Medium,Open,,TLS Version 1.1 Protocol Deprecated,TLS Version 1.1 Protocol Deprecated,"2023 Nov
+2023 Oct","The remote service accepts connections encrypted using TLS 1.1. TLS 1.1 lacks support for current and recommended
+cipher suites. Ciphers that support encryption before MAC computation, and authenticated encryption modes such as GCM
+cannot be used with TLS 1.1
+
+As of March 31, 2020, Endpoints that are not enabled for TLS 1.2 and higher will no longer function properly with major
+web browsers and major vendors.","Enable support for TLS 1.2 and/or 1.3, and disable support for TLS 1.1.",3,tcp/443,1/1/2023,,,
+#72,Medium,Open,CVE-2023-34056,VMware vCenter Server 7.0 < 7.0U3o / 8.0 < 8.0U2 Partial Information Disclosure (VMSA-2023-0023),VMware vCenter Server 7.0 < 7.0U3o / 8.0 < 8.0U2 Partial Information Disclosure (VMSA-2023-0023),2023 Nov,"The version of VMware vCenter Server installed on the remote host is 7.0 prior to 7.0U3o, or 8.0 prior to 8.0U2. It
+is, therefore, affected by a partial information disclosure vulnerability as referenced in the VMSA-2023-0023 advisory:
+
+  - vCenter Server contains a partial information disclosure vulnerability. A malicious actor with non-administrative
+    privileges to vCenter Server may leverage this issue to access unauthorized data. (CVE-2023-34056)
+  
+Note that Nessus has not tested for these issues but has instead relied only on the application's self-reported version
+number.","Upgrade to VMware vCenter Server 7.0U3o, or 8.0U2 or later.",3,tcp/443,1/1/2023,,,
+#73,Medium,Open,CVE-2023-34056,VMware vCenter Server 7.0 < 7.0U3o / 8.0 < 8.0U2 Partial Information Disclosure (VMSA-2023-0023),VMware vCenter Server 7.0 < 7.0U3o / 8.0 < 8.0U2 Partial Information Disclosure (VMSA-2023-0023),2023 Nov,"The version of VMware vCenter Server installed on the remote host is 7.0 prior to 7.0U3o, or 8.0 prior to 8.0U2. It
+is, therefore, affected by a partial information disclosure vulnerability as referenced in the VMSA-2023-0023 advisory:
+
+  - vCenter Server contains a partial information disclosure vulnerability. A malicious actor with non-administrative
+    privileges to vCenter Server may leverage this issue to access unauthorized data. (CVE-2023-34056)
+  
+Note that Nessus has not tested for these issues but has instead relied only on the application's self-reported version
+number.","Upgrade to VMware vCenter Server 7.0U3o, or 8.0U2 or later.",3,tcp/443,1/1/2023,,,
+#74,Medium,Open,,mDNS Detection (Remote Network),mDNS Detection (Remote Network),"2023 Nov
+2023 Oct","The remote service understands the Bonjour (also known as ZeroConf or
+mDNS) protocol, which allows anyone to uncover information from the
+remote host such as its operating system type and exact version, its
+hostname, and the list of services it is running. 
+
+This plugin attempts to discover mDNS used by hosts that are not on the
+network segment on which Nessus resides.","Filter incoming traffic to UDP port 5353, if desired.",4,udp/5353,1/1/2023,,,
+#75,Medium,Open,,mDNS Detection (Remote Network),mDNS Detection (Remote Network),"2023 Nov
+2023 Oct","The remote service understands the Bonjour (also known as ZeroConf or
+mDNS) protocol, which allows anyone to uncover information from the
+remote host such as its operating system type and exact version, its
+hostname, and the list of services it is running. 
+
+This plugin attempts to discover mDNS used by hosts that are not on the
+network segment on which Nessus resides.","Filter incoming traffic to UDP port 5353, if desired.",4,udp/5353,1/1/2023,,,
+#76,Low,Open,,Microsoft Windows Sever 2012 R2 Unsupported Version Detection,Microsoft Windows Sever 2012 R2 Unsupported Version Detection,2023 Nov,"Microsoft Windows Server 2012 R2 is running on the remote host.
+Microsoft ended support for Windows Server 2012 R2 on October 10, 2023.
+
+Lack of support implies that no new security patches for the product
+will be released by the vendor. As a result, it is likely to contain
+security vulnerabilities. Furthermore, Microsoft is unlikely to
+investigate or acknowledge reports of vulnerabilities.",Upgrade to a version of Microsoft Windows that is currently supported.,4,tcp/445,1/1/2023,,,
+#77,Low,Open,,SMTP Service Cleartext Login Permitted,SMTP Service Cleartext Login Permitted,2023 Nov,"The remote host is running an SMTP server that advertises that it
+allows cleartext logins over unencrypted connections.  An attacker may
+be able to uncover user names and passwords by sniffing traffic to the
+server if a less secure authentication mechanism (i.e.  LOGIN or
+PLAIN) is used.","Configure the service to support less secure authentication
+mechanisms only over an encrypted channel.",4,tcp/25,1/1/2023,,,
+#78,Low,Open,,SSH Weak Key Exchange Algorithms Enabled,SSH Weak Key Exchange Algorithms Enabled,"2023 Nov
+2023 Oct","The remote SSH server is configured to allow key exchange algorithms which are considered weak.
+
+This is based on the IETF draft document Key Exchange (KEX) Method Updates and Recommendations for Secure Shell (SSH)
+draft-ietf-curdle-ssh-kex-sha2-20. Section 4 lists guidance on key exchange algorithms that SHOULD NOT and MUST NOT be
+enabled. This includes:
+
+  diffie-hellman-group-exchange-sha1
+
+  diffie-hellman-group1-sha1
+
+  gss-gex-sha1-*
+
+  gss-group1-sha1-*
+
+  gss-group14-sha1-*
+
+  rsa1024-sha1
+
+Note that this plugin only checks for the options of the SSH server, and it does not check for vulnerable software
+versions.",Contact the vendor or consult product documentation to disable the weak algorithms.,4,tcp/22,1/1/2023,,,
+#79,Low,Open,,SSH Weak Key Exchange Algorithms Enabled,SSH Weak Key Exchange Algorithms Enabled,"2023 Nov
+2023 Oct","The remote SSH server is configured to allow key exchange algorithms which are considered weak.
+
+This is based on the IETF draft document Key Exchange (KEX) Method Updates and Recommendations for Secure Shell (SSH)
+draft-ietf-curdle-ssh-kex-sha2-20. Section 4 lists guidance on key exchange algorithms that SHOULD NOT and MUST NOT be
+enabled. This includes:
+
+  diffie-hellman-group-exchange-sha1
+
+  diffie-hellman-group1-sha1
+
+  gss-gex-sha1-*
+
+  gss-group1-sha1-*
+
+  gss-group14-sha1-*
+
+  rsa1024-sha1
+
+Note that this plugin only checks for the options of the SSH server, and it does not check for vulnerable software
+versions.",Contact the vendor or consult product documentation to disable the weak algorithms.,4,tcp/22,1/1/2023,,,
+#80,Low,Open,,SSH Weak Key Exchange Algorithms Enabled,SSH Weak Key Exchange Algorithms Enabled,"2023 Nov
+2023 Oct","The remote SSH server is configured to allow key exchange algorithms which are considered weak.
+
+This is based on the IETF draft document Key Exchange (KEX) Method Updates and Recommendations for Secure Shell (SSH)
+draft-ietf-curdle-ssh-kex-sha2-20. Section 4 lists guidance on key exchange algorithms that SHOULD NOT and MUST NOT be
+enabled. This includes:
+
+  diffie-hellman-group-exchange-sha1
+
+  diffie-hellman-group1-sha1
+
+  gss-gex-sha1-*
+
+  gss-group1-sha1-*
+
+  gss-group14-sha1-*
+
+  rsa1024-sha1
+
+Note that this plugin only checks for the options of the SSH server, and it does not check for vulnerable software
+versions.",Contact the vendor or consult product documentation to disable the weak algorithms.,4,tcp/22,1/1/2023,,,
+#81,Low,Open,,SSH Weak Key Exchange Algorithms Enabled,SSH Weak Key Exchange Algorithms Enabled,"2023 Nov
+2023 Oct","The remote SSH server is configured to allow key exchange algorithms which are considered weak.
+
+This is based on the IETF draft document Key Exchange (KEX) Method Updates and Recommendations for Secure Shell (SSH)
+draft-ietf-curdle-ssh-kex-sha2-20. Section 4 lists guidance on key exchange algorithms that SHOULD NOT and MUST NOT be
+enabled. This includes:
+
+  diffie-hellman-group-exchange-sha1
+
+  diffie-hellman-group1-sha1
+
+  gss-gex-sha1-*
+
+  gss-group1-sha1-*
+
+  gss-group14-sha1-*
+
+  rsa1024-sha1
+
+Note that this plugin only checks for the options of the SSH server, and it does not check for vulnerable software
+versions.",Contact the vendor or consult product documentation to disable the weak algorithms.,4,tcp/22,1/1/2023,,,
+#82,Low,Open,,SSH Weak Key Exchange Algorithms Enabled,SSH Weak Key Exchange Algorithms Enabled,"2023 Nov
+2023 Oct","The remote SSH server is configured to allow key exchange algorithms which are considered weak.
+
+This is based on the IETF draft document Key Exchange (KEX) Method Updates and Recommendations for Secure Shell (SSH)
+draft-ietf-curdle-ssh-kex-sha2-20. Section 4 lists guidance on key exchange algorithms that SHOULD NOT and MUST NOT be
+enabled. This includes:
+
+  diffie-hellman-group-exchange-sha1
+
+  diffie-hellman-group1-sha1
+
+  gss-gex-sha1-*
+
+  gss-group1-sha1-*
+
+  gss-group14-sha1-*
+
+  rsa1024-sha1
+
+Note that this plugin only checks for the options of the SSH server, and it does not check for vulnerable software
+versions.",Contact the vendor or consult product documentation to disable the weak algorithms.,4,tcp/22,1/1/2023,,,
+#83,Low,Open,,SSH Weak Key Exchange Algorithms Enabled,SSH Weak Key Exchange Algorithms Enabled,"2023 Nov
+2023 Oct","The remote SSH server is configured to allow key exchange algorithms which are considered weak.
+
+This is based on the IETF draft document Key Exchange (KEX) Method Updates and Recommendations for Secure Shell (SSH)
+draft-ietf-curdle-ssh-kex-sha2-20. Section 4 lists guidance on key exchange algorithms that SHOULD NOT and MUST NOT be
+enabled. This includes:
+
+  diffie-hellman-group-exchange-sha1
+
+  diffie-hellman-group1-sha1
+
+  gss-gex-sha1-*
+
+  gss-group1-sha1-*
+
+  gss-group14-sha1-*
+
+  rsa1024-sha1
+
+Note that this plugin only checks for the options of the SSH server, and it does not check for vulnerable software
+versions.",Contact the vendor or consult product documentation to disable the weak algorithms.,4,tcp/22,1/1/2023,,,
+#84,Low,Open,,SSH Weak Key Exchange Algorithms Enabled,SSH Weak Key Exchange Algorithms Enabled,"2023 Nov
+2023 Oct","The remote SSH server is configured to allow key exchange algorithms which are considered weak.
+
+This is based on the IETF draft document Key Exchange (KEX) Method Updates and Recommendations for Secure Shell (SSH)
+draft-ietf-curdle-ssh-kex-sha2-20. Section 4 lists guidance on key exchange algorithms that SHOULD NOT and MUST NOT be
+enabled. This includes:
+
+  diffie-hellman-group-exchange-sha1
+
+  diffie-hellman-group1-sha1
+
+  gss-gex-sha1-*
+
+  gss-group1-sha1-*
+
+  gss-group14-sha1-*
+
+  rsa1024-sha1
+
+Note that this plugin only checks for the options of the SSH server, and it does not check for vulnerable software
+versions.",Contact the vendor or consult product documentation to disable the weak algorithms.,4,tcp/22,1/1/2023,,,
+#85,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#86,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/5001",1/1/2023,,,
+#87,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#88,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/3389,1/1/2023,,,
+#89,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#90,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/3389,1/1/2023,,,
+#91,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/636,tcp/3269,tcp/3389",1/1/2023,,,
+#92,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/3389,1/1/2023,,,
+#93,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/636,tcp/1514,tcp/3128,tcp/5480,tcp/5580,tcp/8084,tcp/9087",1/1/2023,,,
+#94,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/5989",1/1/2023,,,
+#95,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/5989",1/1/2023,,,
+#96,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/25,tcp/443,tcp/3389",1/1/2023,,,
+#97,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#98,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#99,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/636,tcp/3269,tcp/3389",1/1/2023,,,
+#100,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#101,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#102,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#103,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/5001",1/1/2023,,,
+#104,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#105,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#106,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/3389,1/1/2023,,,
+#107,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/1433,tcp/3389",1/1/2023,,,
+#108,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#109,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#110,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#111,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/636,tcp/1514,tcp/3128,tcp/5480,tcp/7444,tcp/8084,tcp/9087",1/1/2023,,,
+#112,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#113,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#114,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#115,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#116,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/5001",1/1/2023,,,
+#117,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#118,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#119,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#120,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#121,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/5001",1/1/2023,,,
+#122,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/110,tcp/143,tcp/443",1/1/2023,,,
+#123,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#124,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/5001",1/1/2023,,,
+#125,Low,False Positive,,SSL Certificate Cannot Be Trusted,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#126,Low,Open,,SSL Certificate Chain Contains RSA Keys Less Than 2048 bits,SSL Certificate Chain Contains RSA Keys Less Than 2048 bits,"2023 Nov
+2023 Oct","At least one of the X.509 certificates sent by the remote host has a
+key that is shorter than 2048 bits. According to industry standards
+set by the Certification Authority/Browser (CA/B) Forum, certificates
+issued after January 1, 2014 must be at least 2048 bits.
+
+Some browser SSL implementations may reject keys less than 2048 bits
+after January 1, 2014. Additionally, some SSL certificate vendors may
+revoke certificates less than 2048 bits before January 1, 2014.
+
+Note that Nessus will not flag root certificates with RSA keys less
+than 2048 bits if they were issued prior to December 31, 2010, as the
+standard considers them exempt.","Replace the certificate in the chain with the RSA key less than 2048
+bits in length with a longer key, and reissue any certificates signed
+by the old certificate.",4,"tcp/443,tcp/5001",1/1/2023,,,
+#127,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/5001",1/1/2023,,,
+#128,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#129,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#130,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#131,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#132,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#133,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,4,"tcp/443,tcp/5001",1/1/2023,,,
+#134,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,4,tcp/443,1/1/2023,,,
+#135,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,4,tcp/1433,1/1/2023,,,
+#136,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#137,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#138,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,5,"tcp/443,tcp/5001",1/1/2023,,,
+#139,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#140,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#141,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,5,"tcp/443,tcp/5001",1/1/2023,,,
+#142,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,5,"tcp/110,tcp/143,tcp/443",1/1/2023,,,
+#143,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,5,"tcp/443,tcp/5001",1/1/2023,,,
+#144,Low,False Positive,,SSL Certificate with Wrong Hostname,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The 'commonName' (CN) attribute of the SSL certificate presented for
+this service is for a different machine.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#145,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#146,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#147,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/3389,1/1/2023,,,
+#148,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#149,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/3389,1/1/2023,,,
+#150,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/3389,1/1/2023,,,
+#151,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/3389,1/1/2023,,,
+#152,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/5989,1/1/2023,,,
+#153,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/5989,1/1/2023,,,
+#154,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/3389,1/1/2023,,,
+#155,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#156,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#157,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/3389,1/1/2023,,,
+#158,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#159,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#160,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#161,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#162,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#163,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/3389,1/1/2023,,,
+#164,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,"tcp/1433,tcp/3389",1/1/2023,,,
+#165,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct
+2023 Sep
+2023 Aug","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#166,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#167,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#168,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#169,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#170,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#171,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#172,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#173,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#174,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,"tcp/110,tcp/143,tcp/443",1/1/2023,,,
+#175,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#176,Low,False Positive,,SSL Self-Signed Certificate,SSL Certificate Cannot Be Trusted,"2023 Nov
+2023 Oct","The X.509 certificate chain for this service is not signed by a
+recognized certificate authority.  If the remote host is a public host
+in production, this nullifies the use of SSL as anyone could establish
+a man-in-the-middle attack against the remote host. 
+
+Note that this plugin does not check for certificate chains that end
+in a certificate that is not self-signed, but is signed by an
+unrecognized certificate authority.",Purchase or generate a proper SSL certificate for this service.,5,tcp/443,1/1/2023,,,
+#177,Low,Open,CVE-2015-4000,SSL/TLS Diffie-Hellman Modulus <= 1024 Bits (Logjam),SSL/TLS Diffie-Hellman Modulus <= 1024 Bits (Logjam),2023 Nov,"The remote host allows SSL/TLS connections with one or more
+Diffie-Hellman moduli less than or equal to 1024 bits. Through
+cryptanalysis, a third party may be able to find the shared secret in
+a short amount of time (depending on modulus size and attacker
+resources). This may allow an attacker to recover the plaintext or
+potentially violate the integrity of connections.","Reconfigure the service to use a unique Diffie-Hellman moduli of 2048
+bits or greater.",5,"tcp/110,tcp/143",1/1/2023,,,

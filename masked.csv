@@ -1,7 +1,7 @@
 ﻿DeviceId,DeviceName,OSPlatform,OSVersion,OSArchitecture,SoftwareVendor,SoftwareName,SoftwareVersion,CveId,VulnerabilitySeverityLevel,RecommendedSecurityUpdate,RecommendedSecurityUpdateId,CveTags,CveMitigationStatus
-,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2022-35737,High,January 2024 Security Updates,5034127,[],
-,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20652,High,January 2024 Security Updates,5034127,[],
-,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20653,High,January 2024 Security Updates,5034127,[],
+,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2022-35737,High,January 2024 Security Updates,5034127,[],Fixed
+,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20652,High,January 2024 Security Updates,5034127,[],Fixed
+,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20653,High,January 2024 Security Updates,5034127,[],Fixed
 ,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20654,High,January 2024 Security Updates,5034127,[],
 ,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20657,High,January 2024 Security Updates,5034127,[],
 ,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20658,High,January 2024 Security Updates,5034127,[],

@@ -5,12 +5,6 @@
 ,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20654,High,January 2024 Security Updates,5034127,[],Fixed
 ,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20657,High,January 2024 Security Updates,5034127,[],Fixed
 ,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20658,High,January 2024 Security Updates,5034127,[],Fixed
-,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20661,High,January 2024 Security Updates,5034127,[],Fixed
-,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20674,High,January 2024 Security Updates,5034127,[],Fixed
-,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20682,High,January 2024 Security Updates,5034127,[],Fixed
-,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20683,High,January 2024 Security Updates,5034127,[],Fixed
-,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20687,High,January 2024 Security Updates,5034127,[],Fixed
-,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20696,High,January 2024 Security Updates,5034127,[],Fixed
 ,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20698,High,January 2024 Security Updates,5034127,[],Fixed
 ,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-20700,High,January 2024 Security Updates,5034127,[],Fixed
 ,server01.<domain>.com,WindowsServer2019,10.0.17763.5206,x64,microsoft,windows_server_2019,10.0.17763.5206,CVE-2024-21307,High,January 2024 Security Updates,5034127,[],Fixed
@@ -201,12 +195,6 @@
 ,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-efi-x64-ec2_for_linux,1:2.06-9.amzn2.0.3,CVE-2022-28734,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
 ,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-efi-x64-ec2_for_linux,1:2.06-9.amzn2.0.3,CVE-2022-3775,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
 ,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc_for_linux,1:2.06-9.amzn2.0.3,CVE-2021-3695,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
-,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc_for_linux,1:2.06-9.amzn2.0.3,CVE-2021-3697,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
-,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc_for_linux,1:2.06-9.amzn2.0.3,CVE-2022-2601,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
-,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc_for_linux,1:2.06-9.amzn2.0.3,CVE-2022-28733,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
-,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc_for_linux,1:2.06-9.amzn2.0.3,CVE-2022-28734,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
-,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc_for_linux,1:2.06-9.amzn2.0.3,CVE-2022-3775,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
-,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc-modules_for_linux,1:2.06-9.amzn2.0.3,CVE-2021-3695,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
 ,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc-modules_for_linux,1:2.06-9.amzn2.0.3,CVE-2021-3697,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
 ,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc-modules_for_linux,1:2.06-9.amzn2.0.3,CVE-2022-2601,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
 ,linux-server-01,Linux,amazon_linux_2,x64,amazon,grub2-pc-modules_for_linux,1:2.06-9.amzn2.0.3,CVE-2022-28733,High,ALAS2-2023-2146 - Security Advisory 2023 July 17,ALAS2-2023-2146,[],
